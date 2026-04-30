@@ -1,0 +1,212 @@
+    /* 
+     Este es el cuerpo del index.html, luego cada pagina tiene su cuepo correspondiente
+    aparte del index.css que llevan comun todas, esto lo hice asi para un buen mantenimiento 
+    y evitar la reutilizacion de codigo.
+    */
+
+    .contenedor {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 32px;
+    }
+
+    /*
+       Principal
+    */
+    .principal {
+        padding: 80px 32px 72px;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 64px;
+    }
+
+    .principal-texto {
+        flex: 1;
+    }
+
+    .principal-texto .subtitulo {
+        font-size: 11px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: var(--acento);
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .principal-texto h2 {
+        font-family: 'Lora', serif;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 1.2;
+        color: var(--blanco);
+        margin-bottom: 24px;
+    }
+
+    .principal-texto h2 em {
+        color: var(--acento);
+        font-style: italic;
+    }
+
+    .principal-texto p {
+        color: var(--gris-claro);
+        font-size: 15px;
+        line-height: 1.8;
+        max-width: 420px;
+    }
+
+    .imagen-principal {
+        flex-shrink: 1;
+        width: 460px;
+        height: 360px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagen-principal img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+    /* 
+       Datos de la banda
+     */
+    .datos {
+        background-color: var(--gris-oscuro);
+        padding: 40px 32px;
+    }
+
+    .datos-interior {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .info h3 {
+        font-family: 'Lora', serif;
+        font-size: 48px;
+        font-weight: 400;
+        color: var(--acento);
+        line-height: 1;
+        margin-bottom: 8px;
+    }
+
+    .info p {
+        font-size: 11px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: var(--gris-claro);
+    }
+
+
+    /* Conciertos */
+    .conciertos {
+        padding: 64px 32px;
+        max-width: 1000px;
+        margin: 0 auto;
+
+    }
+
+    .tabla-conciertos {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 16px;
+    }
+
+    .tabla-conciertos th {
+        text-align: left;
+        font-size: 11px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: var(--acento);
+        padding: 10px 16px;
+        border-bottom: 1px solid var(--acento);
+    }
+
+    .tabla-conciertos td {
+        padding: 14px 16px;
+        font-size: 14px;
+        color: var(--gris-claro);
+        border-bottom: 1px solid var(--borde);
+    }
+
+    .tabla-conciertos tbody tr:hover td {
+        color: var(--blanco);
+        background-color: var(--gris-oscuro);
+    }
+
+
+    /*
+      Galeria Imagenes
+    */
+    .titulo{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .galeria {    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    .galeria img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border: 1px solid var(--borde);
+    }
+
+    .galeria img:hover {
+        border-color: var(--acento);
+
+    }
+
+    .descripcion {
+        font-size: 15px;
+        color: var(--gris-claro);
+        margin-bottom: 40px;
+    }
+
+
+    /* 
+       Newsletters subcripcion
+    */
+    .newsletter {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .titulo {
+        font-family: 'Lora', serif;
+        font-size: 28px;
+        font-weight: 400;
+        color: var(--blanco);
+        margin-bottom: 8px;
+    }
+
+    .titulo:hover{
+    color: var(--acento);
+
+    }
+
+    .newsletter input {
+        padding: 10px 16px;
+        background: var(--negro);
+        border: 1px solid var(--blanco);
+        color: var(--blanco);
+        font-size: 14px;
+        width: 260px;
+        margin-right: 8px;
+    }
+
+
+
+

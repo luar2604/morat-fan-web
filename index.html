@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morat-Fandom</title>
+    <link rel="icon" type="image/png" href="assets/icons/iconoweb.png">
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <link rel="stylesheet" href="assets/styles/pages/inicio.css">
+</head>
+<body>
+
+    <!-- Cabecera-->
+    <header class="cabecera">
+        <a href="index.html" class="enlace-cabecera">
+            <h1>MOR<span>AT</span></h1>
+            <p>Bogotá, Colombia - Pop Rock - Desde 2011</p>
+        </a>
+    </header>
+
+    
+    <!-- Navegadir -->
+    <nav class="navegador">
+        <ul>
+            <li><a href="index.html" class="activo">Inicio</a></li>
+            <li><a href="pages/historia.html">Historia</a></li>
+            <li><a href="pages/canciones.html">Canciones</a></li>
+            <li><a href="pages/contacto.html">Contacto</a></li>
+            <li><a href="pages/cuenta.html">Mi cuenta</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="principal">
+        <div class="principal-texto">
+            <span class="subtitulo">Banda colombiana</span>
+            <h2>Música que llega<br>directamente al <em>corazón</em></h2>
+            <p>
+                Morat es una banda de cuatro amigos que decidieron
+                convertir sus emociones en canciones.Lo que pasa con Morat 
+                es que no solo hacen canciones, cuentan historias que todos
+                hemos vivido. Son cuatro amigos que lograron ponerle palabras
+                a esos sentimientos que a veces uno no sabe ni cómo explicar.
+                <br>
+                Su música tiene algo especial: te acompaña en todo el proceso
+                cuendo estas bien o cuando estas mal. 
+                Tienen esa letra perfecta para cuando estás superando un amor
+                que duele, pero también la melodía ideal para cuando extrañas 
+                a alguien con todas tus fuerzas. Es como si cada acorde te 
+                entendiera; pasas de las ganas de llorar a sentir esperanza en
+                una sola canción. Al final, escucharlos se siente como una conversacion
+                sincera que te llega directo al corazon porque se nota que escriben
+                desde lo que sienten de verdad.       
+            </p>
+        </div>
+        <div class="imagen-principal">
+            <img src="assets/img/logo1.webp" alt="Morat">
+        </div>
+    </section>
+
+   
+
+    <!-- info -->
+    <div class="datos">
+        <div class="datos-interior">
+            <div class="info">
+                <h3>2011</h3>
+                <p>Año de formación</p>
+            </div>
+            <div class="info">
+                <h3>3</h3>
+                <p>Álbumes de estudio</p>
+            </div>
+            <div class="info">
+                <h3>4</h3>
+                <p>Integrantes</p>
+            </div>
+            <div class="info">
+                <h3>+50M</h3>
+                <p>Oyentes mensuales</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Proximos Conciertos -->
+    <section class="conciertos">
+        <h2 class="titulo">Próximos conciertos</h2>
+        <p class="descripcion">No te pierdas las próximas fechas de Morat en directo.</p>
+        <table class="tabla-conciertos">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Ciudad</th>
+                    <th>Recinto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>15 Jun 2025</td>
+                    <td>Madrid</td>
+                    <td>WiZink Center</td>
+                </tr>
+                <tr>
+                    <td>22 Jun 2025</td>
+                    <td>Barcelona</td>
+                    <td>Palau Sant Jordi</td>
+                </tr>
+                <tr>
+                    <td>30 Jun 2025</td>
+                    <td>Bogotá</td>
+                    <td>Movistar Arena</td>
+                </tr>
+                <tr>
+                    <td>10 Jul 2025</td>
+                    <td>Ciudad de México</td>
+                    <td>Foro Sol</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+  <!-- Separador -->
+    <div class="separador"></div>
+
+    <!-- Galeria -->
+    <section class="contenedor">
+        
+        <h2 class="titulo">Ultimas Fotos</h2>
+        <p class="descripcion">Fotos del ultimo concierto en Murcia, España</p>
+        <div class="galeria">
+            <img src="assets/img/foto1.webp" >
+            <img src="assets/img/foto2.webp" >
+            <img src="assets/img/foto3.webp" >
+            <img src="assets/img/foto4.webp" >
+            <img src="assets/img/foto5.webp" >
+            <img src="assets/img/foto6.webp" >
+        </div>
+    </section>
+
+        <!-- Separador -->
+        <div class="separador"></div>
+
+        <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="interior">
+            <span class="etiqueta">Mantente informado</span>
+            <h2 class="titulo">Suscríbete al newsletter</h2>
+            <p class="descripcion">Recibe en tu correo las últimas noticias y novedades de Morat.</p>
+            <form action="https://formspree.io/f/xvzdelno" method="POST">
+                <input type="hidden" name="correo" value="Nueva suscripción al newsletter">
+                <input type="email" name="correo" placeholder="Tu correo electrónico" required>
+                <button type="submit" class="boton-informacion">Suscribirme</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="pie">
+        <p><small>@2025</small> <span>Morat</span> Web Fan - Hecho en 1º DAW por Raul Blanque</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

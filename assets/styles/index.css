@@ -1,0 +1,204 @@
+    /* 
+     Aqui van los colores con los que se van a poner en la web para tener un buen mantenimiento 
+    a futuro sin tener que ir buscando donde va a ir cada color solo cambiandolo desde aqui 
+    ya cambian en todos los demas. Aparte van todo lo que se repite como el separador, la cabecera,
+    el menu, el footer y algunos botones.
+     */
+
+    :root {
+        --negro:        #0a0a0a;
+        --gris-oscuro:  #1a1a1a;
+        --gris-medio:   #2d2d2d;
+        --gris-claro:   #888;
+        --blanco:       #f5f5f0;
+        --acento:       #c8a96e;
+        --acento-claro: #e8c98e;
+        --borde:        rgba(255, 255, 255, 0.08);
+        --activo:       #6fcf7a;
+        --cerrar-sesion:#e05555;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Lora', serif;
+        background-color: var(--negro);
+        color: var(--blanco);
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    /*
+       Cabecera
+    */
+    .cabecera {
+        background-color: var(--gris-oscuro);
+        border-bottom: 1px solid var(--borde);
+        padding: 48px 40px 40px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .enlace-cabecera {
+        text-decoration: none; 
+        color: inherit;        
+        display: block;    
+    }
+
+    .cabecera h1 {
+        font-size: 72px;
+        font-weight: 900;
+        letter-spacing: 20px;
+        text-transform: uppercase;
+        color: var(--blanco);
+        position: relative;
+    }
+
+    .cabecera h1 span {
+        color: var(--acento);
+    }
+
+    .cabecera p {
+        font-size: 12px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: var(--gris-claro);
+        margin-top: 8px;
+    }
+
+    /*
+      Navegador
+    */
+    .navegador {
+        background-color: var(--gris-oscuro);
+        border-bottom: 1px solid var(--borde);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .navegador ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .navegador ul li a {
+        display: block;
+        color: var(--gris-claro);
+        text-decoration: none;
+        padding: 18px 32px;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-bottom: 2px solid transparent;
+    }
+
+    .navegador ul li a:hover {
+        color: var(--blanco);
+        border-bottom-color: var(--acento);
+    }
+
+    .navegador ul li a.activo {
+        color: var(--acento);
+        border-bottom-color: var(--acento);
+    }
+
+    /*
+     Footer/Pie de pagina 
+     */
+
+    .pie {
+        background-color: var(--gris-oscuro);
+        border-top: 1px solid var(--borde);
+        text-align: center;
+        padding: 32px 20px;
+        color: var(--gris-claro);
+        margin-top: 20px;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .pie span{
+        color: var(--acento);
+    }
+
+    .boton-informacion{
+        display: inline-block;
+        text-decoration: none;
+        background-color: var(--gris-oscuro);
+        border: 1px solid var(--borde);
+         border-radius: 4px;
+         padding: 10px 22px;
+         color: var(--gris-claro);
+         margin-top:15px;
+
+    }
+
+    .boton-informacion:hover {
+         border-color: var(--acento);  
+        color:var(--blanco);
+    }
+
+     .boton {
+            display: block;
+            width: 100%;
+            margin-top: 28px;
+            padding: 14px;
+            background-color: var(--acento);
+            color: var(--negro);
+            border: none;
+            border-radius: 4px;
+            font-family: 'Lora', serif;
+            font-size: 12px;
+            letter-spacing: 3px;
+        }
+
+        .boton:hover {
+            background-color: var(--border);
+            border : 1px solid var(--acento-claro);
+            color: var(--blanco);
+        }
+
+
+
+        .boton-peligro {
+            background-color: transparent;
+            color:var(--cerrar-sesion);
+            border: 1px solid var(--cerrar-sesion);
+        }
+
+        .boton-peligro:hover {
+            background-color:var(--cerrar-sesion);
+            color: var(--blanco);
+        }
+
+
+
+    /* 
+       Separador
+     */
+    .separador {
+        height: 1px;
+
+        background: var(--gris-medio);
+        margin: 10px;
+    }
+
+    /*
+     Contenedor
+     */
+
+        .contenedor{
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 15px 15px 0;
+
+           }

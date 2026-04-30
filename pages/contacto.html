@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morat—Contacto</title>
+    <link rel="icon" type="image/png" href="../assets/icons/iconoweb.png">
+    <link rel="stylesheet" href="../assets/styles/index.css">
+    <link rel="stylesheet" href="../assets/styles/pages/contacto.css">
+
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header class="cabecera">
+        <a href="../index.html" class="enlace-cabecera">
+            <h1>MOR<span>AT</span></h1>
+            <p>Bogotá, Colombia - Pop Rock - Desde 2011</p>
+        </a>
+    </header>
+
+    <!-- Navegador -->
+    <nav class="navegador">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../pages/historia.html">Historia</a></li>
+            <li><a href="../pages/canciones.html">Canciones</a></li>
+            <li><a href="../pages/contacto.html" class="activo">Contacto</a></li>
+            <li><a href="../pages/cuenta.html">Mi cuenta</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido -->
+    <main class="contenedor-contacto">
+
+        <!-- Encabezado -->
+        <div class="encabezado">
+            <span class="etiqueta">Escríbenos</span>
+            <h1 class="titulo">Contacto</h1>
+            <p class="descripcion">¿Tienes alguna pregunta sobre conciertos, prensa o colaboraciones?
+                Estaré encantado de responderte. Soy uno de los mayores Fan de Morat desde sus inicios.
+            </p>
+        </div>
+
+        <!-- Formulario -->
+        <div class="formulario">
+            <form action="https://formspree.io/f/xvzdelno" method="POST">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+
+                <label for="asunto">Asunto</label>
+                <select id="asunto" name="asunto">
+                    <option value="">Selecciona...</option>
+                    <option value="conciertos">Información sobre conciertos</option>
+                    <option value="prensa">Prensa y medios</option>
+                    <option value="colaboraciones">Colaboraciones</option>
+                </select>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                <button type="submit" class="boton">Enviar mensaje</button>
+
+            </form>
+        </div>
+
+        <!-- Información -->
+        <div class="informacion">
+            <h2>Información</h2>
+
+            <div class="dato">
+                <div class="dato-texto">
+                    <p>Si necesitas información más específica o privada que no encuentras en el formulario, no dudes en escribirme directamente.</p>
+                    <a href="mailto:fandomdawmorat@gmail.com?subject=Contacto%20-%20Fandom%20Morat&body=Hola!%0A%0AMe%20pongo%20en%20contacto%20contigo%20desde%20tu%20web%20de%20fandom%20de%20Morat.%0A%0AMotivo%20del%20mensaje%3A%0A%0A%0AGracias%20por%20tu%20trabajo%20y%20por%20mantener%20informada%20a%20la%20comunidad!">
+                        fandomdawmorat@gmail.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="dato">
+                <div class="dato-texto">
+                    <p>Ciudad</p>
+                    <span>Bogotá, Colombia</span>
+                </div>
+            </div>
+
+            <div class="dato">
+                <div class="dato-texto">
+                    <p>Web oficial ropa</p>
+                    <a href="https://shopus.moratoficial.com" target="_blank">Ropa Morat</a>
+                </div>
+            </div>
+
+            <div class="dato">
+                <div class="dato-texto">
+                    <p>Web oficial</p>
+                    <a href="https://morat.co" target="_blank">https://morat.co</a>
+                </div>
+            </div>
+
+            <div class="dato">
+                <div class="dato-texto">
+                    <p>Twitter/X</p>
+                    <a href="https://x.com/MoratBanda" target="_blank">@moratbanda</a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="pie">
+        <p><small>@2025</small> <span>Morat</span> Web Fan - Hecho en 1º DAW por Raul Blanque</p>
+    </footer>
+
+</body>
+</html>

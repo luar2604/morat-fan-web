@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morat-MiCuenta</title>
+  <link rel="icon" type="image/png" href="../assets/icons/iconoweb.png">
+  <link rel="stylesheet" href="../assets/styles/index.css">
+  <link rel="stylesheet" href="../assets/styles/pages/cuenta.css">
+</head>
+<body>
+
+  <!-- Cabecera -->
+  <header class="cabecera">
+      <a href="../index.html" class="enlace-cabecera">
+          <h1>MOR<span>AT</span></h1>
+          <p>Bogotá, Colombia - Pop Rock - Desde 2011</p>
+      </a>
+  </header>
+
+  <!-- Navegador -->
+  <nav class="navegador">
+    <ul>
+       <li><a href="../index.html" >Inicio</a></li>
+        <li><a href="../pages/historia.html">Historia</a></li>
+        <li><a href="../pages/canciones.html">Canciones</a></li>
+        <li><a href="../pages/contacto.html" >Contacto</a></li>
+        <li><a href="../pages/cuenta.html" class="activo">Mi Cuenta</a></li>
+    </ul>
+
+  </nav>
+
+  <main class="perfil-contenedor">
+
+    <div class="perfil-Cabecera">
+
+      <div class="perfil-avatar">
+        <span id="avatarIniciales"></span>
+      </div>
+
+      <div class="perfil-header-info">
+        <span class="marca-nombre">Fan Account</span>
+        <h2 class="perfil-nombre" id="perfilNombre"></h2>
+        <p class="perfil-usuario" id="perfilUsuario"></p>
+      </div>
+
+    </div>
+
+    <div class="perfil">
+
+      <div class="tarjeta-perfil">
+
+        <div class="tarjeta-titulo">
+          Datos de la cuenta
+        </div>
+        <div class="linea"></div>
+
+        <div class="dato-fila">
+          <span class="dato-label">Nombre</span>
+          <span class="dato-valor" id="datoNombre">—</span>
+        </div>
+
+        <div class="dato-fila">
+          <span class="dato-label">Usuario</span>
+          <span class="dato-valor" id="datoUsuario">—</span>
+        </div>
+
+        <div class="dato-fila">
+          <span class="dato-label">Estado</span>
+          <span class="dato-valor estado-activo">● Activo</span>
+        </div>
+
+        <div class="dato-fila">
+          <span class="dato-label">Fecha de nacimiento</span>
+          <span class="dato-valor">26/04/2005</span>
+        </div>
+
+        <div class="dato-fila">
+          <span class="dato-label">Genero</span>
+          <select id="genero" class="select-genero">
+            <option value="">-- Elige --</option>
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+            <option value="mujer">No Binarie</option>
+            <option value="mujer">Prefueri no contestar</option>
+          </select>
+        </div>
+
+        <button class="boton boton-peligro" id="btnCerrarSesion">
+          Cerrar sesión
+        </button>
+
+      </div>
+
+      <div class="tarjeta-perfil">
+
+        <div class="tarjeta-titulo">
+          Cambiar contraseña
+        </div>
+        <div class="linea"></div>
+
+        <form class="formulario" id="formCambiarPassword">
+
+          <div class="grupo">
+            <label for="passwordActual">Contraseña actual</label>
+            <input type="password" id="passwordActual" placeholder="••••••••">
+          </div>
+
+          <div class="grupo">
+            <label for="passwordNueva">Nueva contraseña</label>
+            <input type="password" id="passwordNueva" placeholder="••••••••">
+          </div>
+
+          <div class="grupo">
+            <label for="passwordNueva2">Confirma nueva contraseña</label>
+            <input type="password" id="passwordNueva2" placeholder="••••••••">
+          </div>
+
+          <button type="submit" class="boton">Actualizar contraseña</button>
+
+          <p id="mensajePerfil" class="mensaje-perfil" style="display:none;"></p>
+
+        </form>
+
+      </div>
+
+    </div>
+    
+
+  </main>
+
+  <!-- footer -->
+  <footer class="pie">
+        <p><small>@2025</small> <span>Morat</span> Web Fan - Hecho en 1º DAW por Raul Blanque</p>
+  </footer>
+
+  <script src="../js/index.js"></script>
+  <script src="../js/perfil.js"></script>
+
+</body>
+</html>

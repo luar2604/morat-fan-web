@@ -1,0 +1,169 @@
+    .encabezado-historia {
+        padding: 64px 0 48px;
+    }
+
+    
+    .origen,
+    .miembros,
+    .trayectoria {
+        margin-bottom: 72px;
+    }
+
+    .subtitulo {
+        font-family: 'Lora', serif;
+        font-size: 32px;
+        font-weight: 400;
+        color: var(--blanco);
+        margin-bottom: 24px;
+    }
+
+    /* 
+       Origen
+     */
+    .origen{
+        display: flex;
+        gap: 56px;
+        align-items: flex-start;
+    }
+
+    .texto {
+        flex: 1;
+    }
+
+    .texto p {
+        font-size: 15px;
+        color: var(--gris-claro);
+        line-height: 1.9;
+        margin-bottom: 16px;
+    }
+
+    .texto strong {
+        color: var(--blanco);
+    }
+
+    .imagen {
+        flex-shrink: 0;
+        width: 320px;
+        margin-top: 80px  ;
+        margin-left: 25px;
+    }
+
+    .imagen img {
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid var(--borde);
+    }
+
+    /* 
+       Miembros
+     */
+    .columna-miembros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        margin-top: 8px;
+    }
+
+    .miembro {
+        background-color: var(--gris-oscuro);
+        border: 1px solid var(--borde);
+        border-radius: 4px;
+        padding: 28px;
+        display: flex;
+        gap: 24px;
+        align-items: flex-start;
+
+    }
+
+
+
+    .miembro:hover {
+        border-color: var(--acento);
+    }
+
+    .icono{
+      width: 35px;         
+      height: 35px;
+      vertical-align: middle;
+    }
+
+    .foto {
+        flex-shrink: 0;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 2px solid var(--borde);  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 36px;
+    }
+
+    .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .info {
+        flex: 1;
+    }
+
+    .nombre {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--blanco);
+        margin-bottom: 4px;
+        letter-spacing: 0.5px;
+    }
+
+    .rol {
+        font-size: 11px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: var(--acento);
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    .info p {
+        font-size: 13px;
+        color: var(--gris-claro);
+        line-height: 1.8;
+    }
+
+
+    /*
+       Trayectoria
+    */
+    .evento {
+        display: flex;
+        gap: 32px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .año {
+        flex-shrink: 0;
+        font-family: 'Lora', serif;
+        font-size: 22px;
+        color: var(--acento);
+        font-weight: 400;
+        width: 60px;
+        padding-top: 2px;
+    }
+
+    .contenido h3 {
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--blanco);
+        margin-bottom: 8px;
+        letter-spacing: 0.5px;
+    }
+
+    .contenido p {
+        font-size: 14px;
+        color: var(--gris-claro);
+        line-height: 1.8;
+    }

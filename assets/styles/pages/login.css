@@ -1,0 +1,103 @@
+    .contenedor-login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 70vh; 
+        padding: 40px 10px;
+    }
+
+    .tarjeta {
+        background-color: var(--gris-oscuro);
+        border: 1px solid var(--borde);
+        padding: 40px;
+        width: 100%;
+        max-width: 400px;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    .marca-nombre {
+        color: var(--acento);
+        font-size: 10px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .titulo {
+        font-size: 32px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin: 20px 0 10px;
+        line-height: 1.1;
+        letter-spacing: 2px;
+    }
+
+    .subtitulo {
+        color: var(--gris-claro);
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .linea {
+        height: 1px;
+        background: linear-gradient(to right, transparent, var(--acento), transparent);
+        margin-bottom: 30px;
+    }
+
+    /* Formulario */
+    .grupo {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .grupo label {
+        display: block;
+        font-size: 11px;
+        text-transform: uppercase;
+        color: var(--acento);
+        margin-bottom: 8px;
+    }
+
+    .grupo input {
+        width: 100%;
+        background-color: var(--gris-medio);
+        border: 1px solid var(--borde);
+        padding: 12px;
+        color: var(--blanco);
+        font-family: 'Lora', serif;
+        outline: none;
+    }
+
+    .opciones {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        margin-bottom: 25px;
+    }
+
+    .olvidaste {
+        color: var(--acento);
+        text-decoration: none;
+    }
+
+
+    .pie-form{
+        margin-top: 0 !important;
+    }
+
+    .tarjeta .pie-form {
+        background: none;
+        border: none;
+        margin-top: 20px;
+        padding: 0;
+        text-decoration: none;
+
+    }
+
+    .pie-form a {
+        color: var(--acento);
+        text-decoration: none;
+        font-weight: 700;
+    }

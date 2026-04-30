@@ -1,0 +1,174 @@
+    .encabezado-canciones {
+        padding: 64px 0 40px;
+    }
+
+    .descripcion {
+        font-size: 15px;
+        color: var(--gris-claro);
+        max-width: 600px;
+    }
+
+    /* 
+       Secciones
+     */
+    .seccion-tabla,
+    .seccion-audio,
+    .seccion-videos {
+        margin-bottom: 64px;
+    }
+
+    .subtitulo-seccion {
+        font-family: 'Lora', serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: var(--blanco);
+        margin-bottom: 8px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid var(--borde);
+    }
+
+    .descripcion-seccion {
+        font-size: 14px;
+        color: var(--gris-claro);
+        margin-bottom: 24px;
+    }
+
+    .seccion-videos{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    /*
+       Canciones tabla
+    */
+    .canciones {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .canciones thead tr {
+        border-bottom: 1px solid var(--acento);
+    }
+
+    .canciones th {
+        text-align: left;
+        font-size: 11px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: var(--acento);
+        padding: 12px 16px;
+        font-weight: 400;
+    }
+
+    .canciones td {
+        padding: 14px 16px;
+        font-size: 14px;
+        color: var(--gris-claro);
+        border-bottom: 1px solid var(--borde);
+        transition: color 0.2s;
+    }
+
+    .canciones tbody tr {
+        transition: background 0.2s;
+    }
+
+    .canciones tbody tr:hover {
+        background-color: var(--gris-oscuro);
+    }
+
+    .canciones tbody tr:hover td {
+        color: var(--blanco);
+    }
+
+    .canciones .num {
+        color: var(--acento);
+        font-size: 12px;
+        width: 40px;
+    }
+
+    .canciones .nombre-cancion {
+        color: var(--blanco);
+        font-weight: 500;
+    }
+
+    /* 
+      reproductor mp3
+    */
+    .listas {
+        display: flex;
+        flex-direction: column ;
+        gap: 16px;
+    }
+
+    .audios {
+        background-color: var(--gris-oscuro);
+        border: 1px solid var(--borde);
+        border-radius: 4px;
+        padding: 20px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+
+    }
+
+    .audios:hover {
+        border-color: var(--acento);
+    }
+
+    .audio-info {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .audio-titulo {
+        font-size: 15px;
+        color: var(--blanco);
+        font-weight: 500;
+    }
+
+    .audio-album {
+        font-size: 12px;
+        color: var(--gris-claro);
+        letter-spacing: 1px;
+    }
+
+    .audios audio {
+        flex-shrink: 0;
+        width: 300px;
+        accent-color: var(--acento);
+    }
+
+    /* 
+       Videos mp4
+    */
+    .grid-videos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .video-item {
+        background-color: var(--gris-oscuro);
+        border: 1px solid var(--borde);
+        border-radius: 4px;
+        overflow: hidden;
+        
+    }
+
+    .video-item:hover {
+        border-color: var(--acento);
+    }
+
+    .video-item video {
+        width: 100%;
+        display: block;
+    }
+
+    .video-titulo {
+        font-size: 13px;
+        color: var(--gris-claro);
+        padding: 12px 16px;
+        text-align: center;
+        
+    }
